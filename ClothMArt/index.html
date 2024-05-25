@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/Login logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- nav bar -->
+      <nav class="navbar sticky-top navbar-expand-lg bg-white">
+        <div class="container">
+          <a class="navbar-brand d-flex w-25 text-center " href="#"><img src="./images/Login logo.jpg" style="width: 50%;height: 64px;" alt="Login"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 p-3">
+              <li class="nav-item">
+                <a class="nav-link active text-dark" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark ps-4" href="#" aria-disabled="true">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark ps-4" href="#" aria-disabled="true">Women</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-dark ps-4" aria-disabled="true">Baby collection</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-dark ps-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    New Arrival
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-dark ps-4" aria-disabled="true">Sale</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark ps-4" aria-disabled="true">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+              <button class="btn " type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <button class="btn " type="submit"><i class="fa-solid fa-user"></i></button>
+              <!-- <button class="btn " type="submit"><i class="fa-solid fa-cart-shopping"></i></button> -->
+              <!-- <button type="button" class="btn  position-relative" id="cartButton">
+                <i class="fa-solid fa-cart-shopping"></i> <span class="position-absolute top-25 start-75 translate-middle badge border border-light rounded-circle bg-danger p-2"><span class="cart-badge" id="cartItemCount">0</span></span>
+              </button> -->
+              <button type="button" class="btn  position-relative" id="cartButton">
+                <i class="fa-solid fa-cart-shopping"></i> <span class="position-absolute top-25 start-75 translate-middle badge border border-light rounded-circle bg-danger p-2"><span class="cart-badge" id="cartItemCount">0</span></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="cart-panel" id="cartPanel">
+        <div id="cartItems"></div>
+        <button id="placeOrderButton">Place Order</button>
+        <!-- Cart content will be displayed here -->
+    </div>
+      <!-- sale 50% -->
+      <div class=" bg-dark text-white text-center pt-2" style="height: 50px;">
+        Sale Up To 50% Biggest Discounts. Hurry UP! Limited TIME Offer <button class="text-warning bg-danger border border-start-0 border-top-0 border-end-0">Shop Now</button>
+      </div>
+      <!-- slid screen -->
+      <div id="carouselExampleDark" class="carousel carousel-dark slide mb-4 gap-5">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuK_uZLAQtqqJ6_XscAhKRMtbYTVzuRiaxdiuNKaFeIQ&s"  class="d-block  h" alt="...">
+            <div class="carousel-caption text-dark d-none w-50 h-50 flex-colomn d-md-block pb-3">
+                <div class="container text-center lh-3 flex-colomn my fw-bold w-100 text-primary">
+                    <h5 class="fst-italic text-danger fs-3">Fashion sale</h3>
+                <h6 class="fw-bolder fs-3">Login Variety</h4>
+                <p>FOR MENZ <br> All NEW DESIGN SHIRTS AVAILABLE</p>
+            </div>
+                </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREJi__aEK4NXyGJq5TXasBFoaxHCoGmyvPgkDN-TmE2w&s"  class="d-block  h2" alt="...">
+          </div>
+            </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- cards section -->
+      <div class="container text-center">
+        <div class="row ">
+          <div class="col-md-4">
+            <div class="ig1">
+          </div>
+          </div>
+          <div class="col-md-4">
+          <div class="ig2"></div>
+          </div>
+          <div class="col-md-4">
+          <div class="ig3"></div>
+          </div>
+        </div>
+      </div>
+     
+      <!-- working card like slides -->
+
+      <!-- Trending This Week -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary mb-3">
+  <div class="container border border-end-0 border-start-0 border-top-0 fw-bold">
+    <a class="navbar-brand" href="#">LATEST VARIETY</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <form class="d-flex" role="search">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" onclick="showVariety('men')">Men</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showVariety('women')">Women</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showVariety('baby')">Baby</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showVariety('fashion')">Fashion</a>
+          </li>
+        </ul>
+      </div>
+    </form>
+  </div>
+</nav>
+
+<!-- Trending cards -->
+<!-- Trending cards -->
+<div class="container text-center mb-5" id="trendingCards">
+  <div class="row row-cols-4 row-cols-md-1 g-3 g-lg-5" id="cardRow">
+  </div>
+</div>
+
+  <div id="carouselExampleControlsNoTouching" class="carousel slide w-100 d-sm-block" data-bs-touch="false">
+    <div class="container carousel-inner">
+      <div class="carousel-item active">
+        <div class="row row-cols-4 ">
+                  <div class="col">
+                    <div class="dive">
+                    <div class="p-3"><img src="https://m.media-amazon.com/images/I/91UtNFlAAvL._AC_UY1100_.jpg" style="width: 100%;height:250px" alt=""><br> SHIRTS FOR MEN <br>$98.00 <del class=" ps-2" style="color:black;"><span style="color: blueviolet;">$120.00</span></del> </div>
+                  </div></div>
+                  <div class="col">
+                    <div class="dive">
+                    <div class="p-3"><img src="https://dictionary.cambridge.org/images/thumb/Tshirt_noun_001_18267.jpg?version=6.0.11" style="width: 100%;height: 280px;" alt=""><br>BLUE SLEVE LESS SHIRT <br>$98.00 <del class=" ps-2" style="color:black;"><span style="color: blueviolet;">$120.00</span></del> </div>
+                  </div></div>
+                  <div class="col">
+                    <div class="dive">
+                    <div class="p-3 "><img src="https://assets.ajio.com/medias/sys_master/root/20210404/vtTe/606a18a3f997dd7b647e80f3/-473Wx593H-461380456-pink-MODEL.jpg" style="width: 100%;height: 250px;" alt=""><br>SLEVE LESS SHIRTS FOR GIRLS<br>$98.00 <del class=" ps-2" style="color:black;"><span style="color: blueviolet;">$120.00</span></del> </div>
+                  </div></div>
+                  <div class="col">
+                    <div class="dive">
+                    <div class="p-3 "><img src="https://www.insidehook.com/wp-content/uploads/2024/05/Uniqlo-Tee.jpg?fit=1200%2C800" style="width: 100%;height: 250px;" alt=""><br>BLACK SLEVE LESS SHIRT<br>$98.00 <del class=" ps-2" style="color:black;"><span style="color: blueviolet;">$120.00</span></del></div>
+                  </div></div>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row row-cols-4">
+                  <div class="col">
+                    <div class="dive">
+                    <div class="p-3"><img src="https://assets.ajio.com/medias/sys_master/root/20210404/vtTe/606a18a3f997dd7b647e80f3/-473Wx593H-461380456-pink-MODEL.jpg"style="width: 100%;height:250px" alt="">SLEVE LESS SHIRTS FOR GIRLS <br>$98.00 <del class=" ps-2" style="color:black;"><span style="color: blueviolet;">$120.00</span></del> </div>
+                  </div></div>
+                  <div class="col">
+                    <div class="p-3"><img src="https://www.insidehook.com/wp-content/uploads/2024/05/Uniqlo-Tee.jpg?fit=1200%2C800"style="width: 100%;250px" alt="">BLACK SLEVE LESS SHIRT<br>$98.00 <del class=" ps-2" style="color:black;"><span style="color: blueviolet;">$120.00</span></del> </div>
+                  </div>
+                  <div class="col">
+                    <div class="dive">
+                    <div class="p-3 "><img src="https://m.media-amazon.com/images/I/91UtNFlAAvL._AC_UY1100_.jpg"style="width: 100%;height: 250px;" alt=""> SHIRTS FOR MEN <br>$98.00 <del class=" ps-2" style="color:black;"><span style="color: blueviolet;">$120.00</span></del> </div>
+                  </div></div>
+                  <div class="col">
+                    <div class="dive">
+                    <div class="p-3 "><img src="https://dictionary.cambridge.org/images/thumb/Tshirt_noun_001_18267.jpg?version=6.0.11"style="width: 100%;280px" alt="">BLUE SLEVE LESS SHIRT<br>$98.00 <del class=" ps-2" style="color:black;"><span style="color: blueviolet;">$120.00</span></del></div>
+                  </div></div>
+          </div>
+      </div>
+      <div class="carousel-item">
+       <div class="row row-cols-4">
+                  <div class="col">
+                    <div class="dive">
+                    <div class="p-3"><img src="https://www.insidehook.com/wp-content/uploads/2024/05/Uniqlo-Tee.jpg?fit=1200%2C800"style="width: 100%;250px" alt="">BLACK SLEVE LESS SHIRT<br>$98.00 <del class=" ps-2" style="color:black;"><span style="color: blueviolet;">$120.00</span></del> </div>
+                  </div>
+                  </div>
+                  <div class="col">
+                    <div class="dive">
+                    <div class="p-3"><img src="https://assets.ajio.com/medias/sys_master/root/20210404/vtTe/606a18a3f997dd7b647e80f3/-473Wx593H-461380456-pink-MODEL.jpg"style="width: 100%;height:250px" alt="">SLEVE LESS SHIRTS FOR GIRLS  <br>$98.00 <del class=" ps-2" style="color:black;"><span style="color: blueviolet;">$120.00</span></del> </div>
+                  </div>
+                  </div>
+                  <div class="col">
+                    <div class="dive">
+                    <div class="p-3 "><img src="https://dictionary.cambridge.org/images/thumb/Tshirt_noun_001_18267.jpg?version=6.0.11"style="width: 100%;280px" alt="">BLUE SLEVE LESS SHIRT<br>$98.00 <del class=" ps-2" style="color:black;"><span style="color: blueviolet;">$120.00</span></del> </div>
+                  </div>
+                  </div>
+                  <div class="col">
+                    <div class="dive">
+                    <div class="p-3 "><img src="https://m.media-amazon.com/images/I/91UtNFlAAvL._AC_UY1100_.jpg"style="width: 100%;height: 250px;" alt=""> SHIRTS FOR MEN  <br>$98.00 <del class=" ps-2" style="color:black;"><span style="color: blueviolet;">$120.00</span></del></div>
+                  </div>
+                  </div>
+          </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- you may like  -->
+ 
+  <div class="container text-center mb-5">
+      <h1>YOU MAY LIKE</h1>
+    <div class="container">
+        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row row-cols-4 ">
+                    <div class="col">
+                      <div class="p-3"><img src="https://mohsinsaeedfabrics.pk/cdn/shop/files/mens-wear-1-6543a16b525d9.webp?v=1698931094&width=3000" style="width: 100%;" alt=""><br>MEN's WEAR UNSTITCHED COLLECTION <br><del class=" ps-2" style="color:black;">RS.3000 PKR</del><span style="color: blueviolet;"> RS 2500</span> </div>
+                    </div>
+                    <div class="col">
+                      <div class="p-3"><img src="https://libasekhasstore.com/wp-content/uploads/2023/06/image4-jpg-e1693983665238.webp" style="width: 100%;" alt="">UNSTITCHED COLLECTION <br><del class=" ps-2" style="color:black;">RS.4000 PKR </del><span style="color: blueviolet;"> RS 3500</span></div>
+                    </div>
+                    <div class="col">
+                      <div class="p-3 "><img src="https://www.shopatorient.com/cdn/shop/files/LightBeige_58950c17-a3c3-4aad-9d5a-40d693b191f7.jpg?v=1708499870" style="width: 100%;height: 270px;" alt=""><br>UNSTITCHED COLLECTION<br><del class=" ps-2" style="color:black;">RS.3500 PKR </del><span style="color: blueviolet;">RS.2500</span> </div>
+                    </div>
+                    <div class="col">
+                      <div class="p-3 "><img src="https://popularstyle.com.pk/cdn/shop/files/8_152e119c-33f5-4535-aec5-4dceec2bf48f_1024x1024.jpg?v=1712660540" style="width: 100%;height: 270px;" alt=""><br>CMens-Wear (UnStitched) <br><del class=" ps-2" style="color:black;">RS.2300 PKR </del><span style="color: blueviolet;">RS.2000</span></div>
+                    </div>
+            </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row row-cols-4 ">
+                    <div class="col">
+                      <div class="p-3"><img src="https://popularstyle.com.pk/cdn/shop/files/8_152e119c-33f5-4535-aec5-4dceec2bf48f_1024x1024.jpg?v=1712660540" style="width: 100%;height: 270px;" alt=""><br> Mens-Wear (UnStitched) <br><del class=" ps-2" style="color:black;">RS.2300 PKR </del><Span style="color: blueviolet;">RS.2000 </Span> </div>
+                    </div>
+                    <div class="col">
+                      <div class="p-3"><img src="https://www.shopatorient.com/cdn/shop/files/LightBeige_58950c17-a3c3-4aad-9d5a-40d693b191f7.jpg?v=1708499870" style="width: 100%;height: 270px;" alt=""><br>UNSTITCHED COLLECTION<br><del class=" ps-2" style="color:black;">RS.3500 PKR </del><Span style="color: blueviolet;">RS.2500 </Span> </div>
+                    </div>
+                    <div class="col">
+                      <div class="p-3 "><img src="https://libasekhasstore.com/wp-content/uploads/2023/06/image4-jpg-e1693983665238.webp" style="width: 100%;" alt="">UNSTITCHED COLLECTION <br><del class=" ps-2" style="color:black;">RS.4000 PKR </del><Span style="color: blueviolet;">RS.3500 </Span> </div>
+                    </div>
+                    <div class="col">
+                      <div class="p-3 "><img src="https://mohsinsaeedfabrics.pk/cdn/shop/files/mens-wear-1-6543a16b525d9.webp?v=1698931094&width=3000" style="width: 100%;" alt=""><br>MEN's WEAR UNSTITCHED COLLECTION<br><del class=" ps-2" style="color:black;">RS.3000 PKR </del><Span style="color: blueviolet;">RS.2500</Span></div>
+                    </div>
+            </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row row-cols-4 ">
+                    <div class="col">
+                      <div class="p-3"><img src="https://www.shopatorient.com/cdn/shop/files/LightBeige_58950c17-a3c3-4aad-9d5a-40d693b191f7.jpg?v=1708499870" style="width: 100%;height: 270px;" alt=""><br>UNSTITCHED COLLECTION<br><del class="ps-2" style="color: black;">RS.3500 PKR </del><span style="color: blueviolet;">RS.2500</span></div>
+                    </div>
+                    <div class="col">
+                      <div class="p-3"><img src="https://popularstyle.com.pk/cdn/shop/files/8_152e119c-33f5-4535-aec5-4dceec2bf48f_1024x1024.jpg?v=1712660540" style="width: 100%;height: 270px;" alt=""><br>CMens-Wear (UnStitched)<br><del class="ps-2" style="color: black;">RS.2300 PKR </del><span style="color: blueviolet;">RS.200</span></div>
+                    </div>
+                    <div class="col">
+                      <div class="p-3 "><img src="https://mohsinsaeedfabrics.pk/cdn/shop/files/mens-wear-1-6543a16b525d9.webp?v=1698931094&width=3000" style="width: 100%;" alt=""><br>MEN's WEAR UNSTITCHED COLLECTION<br><del class="ps-2" style="color: black;">RS.3000 PKR </del><span style="color: blueviolet;">RS.2500</span></div>
+                    </div>
+                    <div class="col">
+                      <div class="p-3 "><img src="https://libasekhasstore.com/wp-content/uploads/2023/06/image4-jpg-e1693983665238.webp" style="width: 100%;" alt="">UNSTITCHED COLLECTION <br><del class="ps-2" style="color: black;">RS.4000 PKR </del><span style="color: blueviolet;">RS.3500</span>RS.</div>
+                    </div>
+            </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+    </div>
+  </div>
+
+<!-- LATEST NEWS -->
+<div class="bg-secondary d-flex flex-wrap ">
+    <div class="container text-center">
+        <h1>LATEST NEWS</h1>    
+            <div class="container mb-5 text-start mx-center">
+                <div class="row">
+                  <div class="col">
+                    <div class="card border-bottom-0 border-end-0 border-start-0 border-top-0 bg-secondary" style="width: 18rem;">
+                        <img src="https://m.media-amazon.com/images/I/41JQsjyf8uL._AC_UY1100_.jpg" style="height: 350px;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">NEW FASHIONABLE VARIETY</h6>
+                          <p class="card-text">NEW VARIETY Arrived IN LADIES FASHION</p>
+                          <!-- <a href="#" class="text-dark border border-end-0 border-start-0 border-top-0">READ MORE</a> -->
+                          <button onclick="showAlert()" class="text-dark bg-secondary border border-end-0 border-start-0 border-top-0 ">CHECKOUT NEW ARRIVAL</button>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card border-bottom-0 border-end-0 border-start-0 border-top-0 bg-secondary" style="width: 18rem;">
+                        <img src="https://fashion-wear.in/wp-content/uploads/2022/11/boysclothings.webp" style="height: 355px;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">NEW FASHIONABLE VARIETY</h6>
+                          <p class="card-text">NEW VARIETY Arrived IN KIDS FASHION </p>
+                          <button onclick="showAlert()" class="text-dark bg-secondary border border-end-0 border-start-0 border-top-0 ">CHECKOUT NEW ARRIVAL</button>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card border-bottom-0 border-end-0 border-start-0 border-top-0 bg-secondary" style="width: 18rem;">
+                        <img src="https://arubafashion.pk/cdn/shop/files/DSCF7261_result.jpg?v=1691787974&width=533" style="height: 355px;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h6 class="card-title">NEW FASHIONABLE VARIETY</h6>
+                          <p class="card-text">NEW VARIETY Arrived IN GENTS FASHION </p>
+                          <!-- <a href="#" class="text-dark border border-end-0 border-start-0 border-top-0">READ MORE</a> -->
+                          <button onclick="showAlert()" class="text-dark bg-secondary border border-end-0 border-start-0 border-top-0 ">CHECKOUT NEW ARRIVAL</button>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+<!--app icon -->
+<div class="container d-flex flex-wrap gap-5">
+<div class="card border-bottom-0 border-start-0 border-top-0 text-center " style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title fw-bolder fs-1"><i class="fa-solid fa-truck"></i></h5>
+      <h6 class="card-subtitle mb-2 ">FAST & FREE DELIVERY</h6>
+      <p class="card-text text-body-secondary">Free delivery on all orders</p>
+    </div>
+  </div>
+
+  <div class="card border-bottom-0 border-start-0 border-top-0 text-center " style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title fw-bolder fs-1"><i class="fa-regular fa-credit-card"></i></h5>
+      <h6 class="card-subtitle mb-2 ">SECURE PAYMENT</h6>
+      <p class="card-text text-body-secondary">Free delivery on all orders</p>
+
+    </div>
+  </div>
+
+  <div class="card border-bottom-0 border-start-0 border-top-0 text-center " style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title fw-bolder fs-1"><i class="fa-solid fa-money-bill"></i></h5>
+      <h6 class="card-subtitle mb-2 ">MONEY BACK GUARANTEE</h6>
+      <p class="card-text text-body-secondary">Free delivery on all orders</p>
+    </div>
+  </div>
+
+  <div class="card border-bottom-0 border-start-0 border-top-0 border-end-0 text-center " style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title fw-bolder fs-1"><i class="fa-solid fa-building"></i></h5>
+      <h6 class="card-subtitle mb-2 ">ONLINE SUPPORT</h6>
+      <p class="card-text text-body-secondary">Free delivery on all orders</p>
+    </div>
+  </div>
+</div>
+  <!-- footer -->
+  <footer class="">
+    <div class="container-fluid bg-black">
+        <nav class="navbar navbar-expand-lg bg-black text-white mb-5 ">
+            <div class="container border border-end-0 border-start-0 border-top-0">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse w-100" id="navbarTogglerDemo01">
+                    <h3 class="w-100 me-4"><img src="./images/Login logo.jpg" style="width: 50%;height:64px;" alt="LOGIN"><br><span class="fs-6">SHOP NOW FOR ENJOYING AMAZING DISCONTS </span></h3>
+                    <form class="d-flex w-100" role="search">
+                <input class="form-control p-3 px-5 w-75 mx-auto" type="search" placeholder="Search" aria-label="Search">
+                <button class="bg-danger btn-outline-success px-5" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav me-2 mb-2 me-5 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-brands fa-facebook text-white fs-3"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-brands fa-instagram text-white fs-3"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-brands fa-youtube text-white fs-3"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container pt-3 ">
+  <div class="row border border-end-0 border-start-0 border-start-0 border-top-0 mb-5 pb-5">
+    <div class="col-sm-12 col-md-4 mb-5 mb-sm-0 ">
+      <div class="card bg-black ">
+        <div class="card-body">
+          <a class="navbar-brand d-flex w-25 text-center text-white" href="#"><img src="./images/Login logo.jpg" style="width: 100%;height: 64px;" alt="LOGIN"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-2 mb-3 mb-sm-0">
+                  <div class="card bg-info text-white">
+                    <div class="card-body">
+                      <h5>Men VARIETY</h5> <br>
+<button class="border-0 bg-black text-white">Clothing Fashion</button> <br>
+<button class="border-0 bg-black text-white">Winter </button><br>
+<button class="border-0 bg-black text-white">Summer</button> <br>
+<button class="border-0 bg-black text-white">Formal</button> <br>
+<button class="border-0 bg-black text-white">Casual </button><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-2 mb-3 mb-sm-0">
+                  <div class="card bg-warning text-white">
+                    <div class="card-body">
+                      <h5>Women VARIETY</h5> <br>
+<button class="border-0 bg-black text-white">Clothing Fashion</button> <br>
+<button class="border-0 bg-black text-white">Winter </button><br>
+<button class="border-0 bg-black text-white">Summer</button> <br>
+<button class="border-0 bg-black text-white">Formal</button> <br>
+<button class="border-0 bg-black text-white">Casual </button><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-2 mb-3 mb-sm-0">
+                  <div class="card bg-success text-white">
+                    <div class="card-body">
+                      <h5>Baby Collection</h5> <br>
+<button class="border-0 bg-black text-white">Clothing Fashion</button> <br>
+<button class="border-0 bg-black text-white">Winter </button><br>
+<button class="border-0 bg-black text-white">Summer</button> <br>
+<button class="border-0 bg-black text-white">Formal</button> <br>
+<button class="border-0 bg-black text-white">Casual </button><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-2 mb-3 mb-sm-0">
+                  <div class="card bg-primary text-white">
+                    <div class="card-body">
+                      <h5>FANCY DRESSING</h5> <br>
+<button class="border-0 bg-black text-white">Clothing Fashion</button> <br>
+<button class="border-0 bg-black text-white">Winter </button><br>
+<button class="border-0 bg-black text-white">Summer</button> <br>
+<button class="border-0 bg-black text-white">Formal</button> <br>
+<button class="border-0 bg-black text-white">Casual </button><br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      <div class="container text-center pb-5">
+        <p>THIS WEB CREATED BY <span class="text-danger">SUFYAN</span></p>
+      </div>
+</div>
+<div></div>
+  </footer>
+
+    <script src="app2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+.ps-25{
+    padding-left: 100%;
+}
+.pe-25{
+    padding-right: 100%;
+}
+.ms-5{
+    margin-right: 25%;
+}
+.me-5{
+    margin-left: 25%;
+}
+.text-direct{
+    padding-top: 75% !important;
+}
+.height{
+    height: 75vh;
+}
+.h1{
+    height: 50%;
+}
+.my{
+    margin-right: 80%
+}
+.h{
+    height: 600px;
+    width: 600px;
+    margin-left: 880px;
+}
+.h2{
+    height: 600px;
+    width: 1300px;
+    margin: auto;
+}
+.bg-img-1{
+    background-image: url(images/items1.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover 100%;
+    
+}
+.bg-img-2{
+    background-image: url(images/items2.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover 100%;
+}
+.bg-img-3{
+    background-image: url(images/items3.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+}
+/* Style for the cart button */
+#cartButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+/* Style for the cart panel */
+.cart-panel {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    width: 300px; /* Adjust the width as needed */
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+}
+.cart-panel.open {
+    display: block;
+}
+.cart-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+}
+.cart-item img {
+    max-width: 60px; /* Adjust the maximum width of the image */
+    height: auto;
+    margin-right: 10px;
+}
+.cart-item-details {
+    flex-grow: 1;
+}
